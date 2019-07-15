@@ -1,4 +1,4 @@
-const url = 'https://api.minehut.com';
+var url = 'https://api.minehut.com'; // shh
 
 const MinehutAPI = class {
     constructor() {
@@ -253,8 +253,3 @@ const MinehutServer = class {
         
     }
 }
-
-// https://jakearchibald.com/2017/es-modules-in-browsers/
-
-// this is more of a nitty gritty thing but, should this be index.js or main.js
-// nvm7
