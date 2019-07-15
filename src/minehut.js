@@ -249,7 +249,11 @@ const MinehutServer = class {
         })
     }
     
-    async writeFile(path, content) {
-        
+    async editFile(path, content) {
+        return await fetch(`${url}/file/${this.id}/edit/${path}`, {
+            method: 'POST',
+            headers: this.reqHeaders,
+            body: JSON.stringify({ content })
+        })
     }
 }
